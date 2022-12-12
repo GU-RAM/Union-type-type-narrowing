@@ -1,16 +1,22 @@
+export enum ShapeTypes {
+  Circle,
+  Rectangle,
+  Triangle,
+}
+
 export interface Circle {
-  circle: string;
+  type: ShapeTypes.Circle;
   radius: number;
 }
 
 export interface Rectangle {
-  rectangle: string;
+  type: ShapeTypes.Rectangle;
   length: number;
   breadth: number;
 }
 
 export interface Triangle {
-  triangle: string;
+  type: ShapeTypes.Triangle;
   base: number;
   height: number;
 }
