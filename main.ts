@@ -1,19 +1,19 @@
 import { getArea } from "./area.js";
-import { Circle, Rectangle, Triangle } from "./interfaces.js";
+import { Circle, Rectangle, ShapeTypes, Triangle } from "./interfaces.js";
 
 const circle: Circle = {
-  circle: "circle",
+  type: ShapeTypes.Circle,
   radius: 10,
 };
 
 const rectangle: Rectangle = {
-  rectangle: "rectangle",
+  type: ShapeTypes.Rectangle,
   length: 7,
   breadth: 5,
 };
 
 const triangle: Triangle = {
-  triangle: "triangle",
+  type: ShapeTypes.Triangle,
   base: 12,
   height: 7,
 };
